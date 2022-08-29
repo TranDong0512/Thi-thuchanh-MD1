@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(arr = [], index) {
+        let arraynew = []
+        let list = []
+        if (index => 0 && index <= arr.length) {
+            for (let i = 0; i < index; i++) {
+                arraynew.push(arr[i])
+            }
+            for (let i = index + 1; i < arr.length; i++) {
+                arraynew.push(arr[i])
+            }
+            list = arraynew
+        } else {
+            list = arr
+        }
+        return list
+    }
+    console.log(tryRemoveFromArray([1,2,3,4,5,6],2))
+</script>
+</body>
+<!--let a = +prompt('nhap a');-->
+<!--let arr = [1, 2, 3, 4, 5, 6]-->
+<!--let indexOfA = -1;-->
+
+<!--for (let i = 0; i < arr.length; i++) {-->
+<!--if (arr[i] === a) {-->
+<!--indexOfA = i;-->
+<!--}-->
+<!--}-->
+
+<!--if (indexOfA != -1) {-->
+<!--document.write("Da ton tai")-->
+<!--} else {-->
+<!--arr.push(a)-->
+<!--document.write(arr)-->
+<!--}-->
+</html>
